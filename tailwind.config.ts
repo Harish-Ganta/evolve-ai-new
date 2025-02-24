@@ -53,6 +53,7 @@ export default {
         "Courier New",
         "monospace",
       ],
+      inter: ["Inter", "sans-serif"],
     },
   },
   plugins: [],

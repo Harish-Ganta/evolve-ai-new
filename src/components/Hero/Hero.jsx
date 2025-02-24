@@ -30,21 +30,21 @@ export default function HeroSection() {
   }, [currentText, isDeleting, index]);
 
   return (
-    <section className="bg-[#f8f9fc] min-h-screen flex items-center justify-center">
+    <section className="bg-[#F2F3FB] min-h-screen flex items-center justify-center">
       <div className="container mx-auto px-6 lg:px-16 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         {/* Left Side: Text Content */}
         <div>
-          <h1 className="text-[52px] font-sans leading-tight text-headingText font-semibold">
+          <h1 className="text-[52px] leading-tight text-headingText font-bold">
             Create a powerful but <br /> effortless website for <br />
-            <span className="text-blue-600">{currentText}</span>
+            <span className="text-primary">{currentText}</span>
             <span className="animate-blink">|</span>
           </h1>
-          <p className="mt-4 text-lg text-gray-600 max-w-lg">
-            Build your website in minutes with countless amazing features of Sandbox.
+          <p className="mt-4 text-[24px] text-paraText max-w-lg font-inter">
+          Build your website in minutes with the help of countless amazing features of Sandbox.
           </p>
 
           <div className="mt-6 flex gap-4">
-            <button className="bg-blue-600 text-white px-8 py-4 rounded-full hover:bg-blue-700 transition">
+            <button className="bg-primary text-[20px] font-medium text-white px-8 py-4 rounded-full hover:bg-blue-700 transition">
               Get Started
             </button>
             {/* <button className="bg-gray-200 text-gray-800 px-8 py-4 rounded-lg hover:bg-gray-300 transition">

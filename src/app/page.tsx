@@ -9,6 +9,7 @@ import Last from '../components/Last/Last'
 export default function Home() {
   return (
     <>
+    
     <Hero/>
     <Features/>
     <Features2/>
