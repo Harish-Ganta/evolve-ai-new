@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Color & layout variables */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-primary: #3F78E0;
+  --color-secondary: #9333ea;
+  --background-color: #f3f4f6;
+  --color-text-heading: #343F52; /* Dark gray for headings */
+  --color-text-paragraph: #666F81; /* Lighter gray for body text */
+  --header-height: 80px;
+  --color-button-bg: #45C4A0;
+  --bg-soft-primary: #edf2fc;
+}
+
+/* Bootstrap-like font & other variables */
+:root {
+  --bs-font-sans-serif: "Manrope", sans-serif;
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  --bs-root-font-size: 20px;
+}
+
+/* Dark mode overrides */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+/* Global element styling */
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "THICCCBOI", sans-serif; /* Your custom body font */
+  font-size: 0.85rem;
+}
+
+/* Paragraph styling: increased line-height and adjusted color */
+p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--color-text-paragraph);
+}
+
+/* Heading styling: bold, using Manrope and dark gray color */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  font-family: var(--bs-font-sans-serif); /* Uses Manrope */
+  color: var(--color-text-heading);
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
