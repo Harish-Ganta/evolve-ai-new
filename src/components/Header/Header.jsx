@@ -40,7 +40,7 @@ function Header() {
 
         {/* Navigation Links */}
         <nav className="hidden md:flex space-x-8 ">
-          {[
+          {/* {[
             "Demos",
             "Pages",
             "Projects",
@@ -114,7 +114,7 @@ function Header() {
                 </div>
               )}
             </div>
-          ))}
+          ))} */}
         </nav>
 
         {/* Right Side Buttons */}

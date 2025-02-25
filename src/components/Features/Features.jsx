@@ -49,7 +49,7 @@ export default function DemoSection() {
         <h2 className="text-[3rem] md:text-[4rem] font-extrabold text-primary text-center">
           21
         </h2>
-        <p className="text-[2rem] mx-auto font-thicccboi leading-tight text-headingText font-bold text-center w-full md:max-w-md">
+        <p className="text-[3rem] mb-4 mx-auto font-thicccboi leading-tight text-headingText font-bold text-center w-full md:max-w-2xl">
           Functional, Impressive, and Rich Demos to Start With
         </p>
 

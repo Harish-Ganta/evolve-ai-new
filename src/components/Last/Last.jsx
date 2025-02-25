@@ -4,41 +4,79 @@ import Image from 'next/image';
 
 export default function Last() {
   return (
-    <section className="bg-gray-50 py-16 text-center flex flex-col items-center">
+    <section className="relative py-16 text-center flex flex-col items-center overflow-hidden bg-white">
+      {/* Curved / Wavy Background */}
+      <div className="absolute inset-0 top-0 -z-10">
+        <svg
+          className="w-full h-auto"
+          viewBox="0 0 1440 320"
+          fill="none"
+          preserveAspectRatio="none"
+        >
+          <path
+            fill="#f8fafc" 
+            fillOpacity="1"
+            d="M0,32L48,42.7C96,53,192,75,288,101.3C384,128,480,160,576,186.7C672,213,768,235,864,218.7C960,203,1056,149,1152,112C1248,75,1344,53,1392,42.7L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+          />
+        </svg>
+      </div>
+
       {/* Logo (Optional) */}
       <div className="mb-4">
         <Image src="/images/logo.png" alt="Logo" width={40} height={40} />
       </div>
 
       {/* Title & Description */}
-      <h1 className="text-2xl md:text-4xl font-bold text-headingText">
+      <h1 className="text-[3rem] mb-4 mx-auto font-thicccboi leading-tight text-headingText font-bold max-w-3xl m-auto">
         Think unique and be creative. <br />
         <span className="text-gray-700">Make a difference with Sandbox.</span>
       </h1>
-      <p className="mt-4 text-headingText max-w-2xl">
-        Everything you need to create your next unique and professional website, including impressive and ready-made blocks and pages.
+      <p className="mt-4 mb-4 text-[19px] text-paraText font-inter max-w-[650px] m-auto">
+        Everything you need to create your next unique and professional website, 
+        including impressive and ready-made blocks and pages.
       </p>
 
       {/* Button */}
-      <a href="#" className="mt-6 bg-indigo-600 text-white px-6 py-3 rounded-full text-lg font-medium hover:bg-indigo-500 transition">
+      <a
+        href="#"
+        className="mt-6 bg-indigo-600 text-white px-6 py-3 rounded-full text-lg font-medium hover:bg-indigo-500 transition"
+      >
         Buy Sandbox
       </a>
 
-      {/* Images Overlapping */}
+      {/* Overlapping Images */}
       <div className="relative mt-12 w-full max-w-4xl flex justify-center">
         {/* Left Image */}
-        <div className="absolute left-[-10%] top-10 hidden md:block">
-          <Image src="/images/image1.jpg" alt="Left" width={280} height={180} className="rounded-lg shadow-lg" />
+        <div className="absolute left-[0%] top-10 hidden md:block">
+          <Image
+            src="/images/image1.jpg"
+            alt="Left"
+            width={280}
+            height={180}
+            className="rounded-lg shadow-lg"
+          />
         </div>
 
         {/* Center Image */}
         <div className="relative z-10">
-          <Image src="/images/image2.jpg" alt="Center" width={400} height={250} className="rounded-lg shadow-2xl" />
+          <Image
+            src="/images/image2.jpg"
+            alt="Center"
+            width={400}
+            height={250}
+            className="rounded-lg shadow-2xl"
+          />
         </div>
 
         {/* Right Image */}
-        <div className="absolute right-[-10%] top-10 hidden md:block">
-          <Image src="/images/image1.jpg" alt="Right" width={280} height={180} className="rounded-lg shadow-lg" />
+        <div className="absolute right-[0%] top-10 hidden md:block">
+          <Image
+            src="/images/image1.jpg"
+            alt="Right"
+            width={280}
+            height={180}
+            className="rounded-lg shadow-lg"
+          />
         </div>
       </div>
     </section>
